@@ -1,0 +1,20 @@
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: aqua;
+flex: auto;
+
+}
+.display{
+    background-color: darkred;
+    display: flex;
+}
+.buttons{
+    border: 20px;
+}
+.body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
