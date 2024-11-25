@@ -11,25 +11,31 @@
     justify-content: center;
 }
 .container{
-background: rebeccapurple;
+background: rgb(168, 170, 168);
+border-radius: 30px;
 display: flex;
 flex-direction: column;
-
+height: 400px;
+width: 350px;
 }
 .display{
-    background-color: darkred;
- 
+    background-color: rgb(238, 239, 244);
+ padding: 20px;
+border-radius: 20px;
     height: 100px;
 }
 .buttons{
     display: flex;
     height: 250px;
-    width: 400px;
-  
+    
+    flex-wrap: wrap;
+    flex: auto;
+    flex-direction: column-reverse;
 }
-#number, #opr{
+.number, .opr{
    border-radius: 15px;
-    background: #73AD21;
-    padding: 20px;
-
+    background: #a8c2ca;
+   padding: 20px;
+    font-size: 20px;
 }
+
