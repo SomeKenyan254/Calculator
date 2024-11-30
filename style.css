@@ -1,57 +1,86 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
 }
 
-/* Calculator container */
 .calculator {
-    width: 300px;
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 20px;
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    gap: 20px;
+}
+
+/* Display Style */
+.display {
+    background: #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    overflow-x: auto;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #333;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-/* Display screen */
-.display {
-    background: #eaeaea;
-    height: 60px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-    font-size: 1.5rem;
-    overflow-x: auto;
-    
-}
-
-/* Buttons container */
-.buttons {
+.numKeys, .oprKeys, .funcKeys {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
 
-/* Button styling */
+/* Button Styles */
 button {
-    flex: 1 1 22%;
-    padding: 15px;
-    font-size: 1.2rem;
+    background: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
-    color: white;
+    font-size: 1rem;
+    padding: 15px;
     cursor: pointer;
+    flex: 1;
     text-align: center;
-    transition: background-color 0.3s ease;
+    min-width: 60px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Special Buttons */
+#equal {
+    background: #28a745;
+    flex: 100%;
+}
+
+#equal:hover {
+    background: #218838;
+}
+
+button:nth-child(3n) {
+    margin-right: 0;
 }
